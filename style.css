@@ -1,57 +1,77 @@
-
-
 :root {
-    --lightgreen:rgb(150, 197, 197);
-    --darkgreen:rgb(60, 124, 124);
-    --font: 'Roboto', sans-serif;
+  --lightgreen: rgb(150, 197, 197);
+  --darkgreen: rgb(60, 124, 124);
+  --font: "Roboto", sans-serif;
 }
 
 .background1 {
-    background-color: var(--lightgreen);
-  }
-  
-  .background2 {
-    background-color: var(--darkgreen);
-  }
-  
-  img {
-    border-radius: 60%;
-    max-width: 200px;
-    height: auto;
-  }
-  
-  .container {
-    display: flex;
-    margin: 1px;
-  }
-  
-  .personal_container {
-    align-items: flex-start;
-    margin: 1px;
-    padding: 10px;
-    font-weight: bold;
-  }
-  
-  .tools {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    flex-flow: column;
-    justify-content: space-between;
-  }
-  
-  .personal_container, .background_container {
-    font-family: var(--font);
+  background-color: var(--lightgreen);
+}
+
+.background2 {
+  background-color: var(--darkgreen);
+}
+
+img {
+  border-radius: 60%;
+  max-width: 200px;
+  height: auto;
+}
+
+.container {
+  display: flex;
+  margin: 1px;
+}
+
+.personal_container {
+  align-items: flex-start;
+  margin: 1px;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.tools {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-flow: column;
+  justify-content: space-between;
+}
+
+.personal_container,
+.background_container {
+  font-family: var(--font);
+}
+
+.background_container {
+  align-items: flex-end;
+  padding: 10px;
+}
+
+footer {
+  background-color: var(--darkgreen);
+  text-align: center;
+  margin-top: 10px;
+  padding: 1px;
+}
+
+@media screen and (max-width: 768px) {
+
+  body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
   }
 
-  .background_container {
-    align-items: flex-end;
-    padding: 10px;
+  .container {
+    flex-direction: column;
   }
-  
-  footer {
-    background-color: var(--darkgreen);
+
+  .personal_container {
     text-align: center;
-    margin-top: 10px;
-    padding: 1px;
   }
+
+  .skills_tools {
+    padding: 5px;
+  }
+}
